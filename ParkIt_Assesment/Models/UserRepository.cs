@@ -7,14 +7,15 @@ namespace ParkIt_Assesment.Models
 {
 	public class UserRepository : IUserRepository
 	{
+		//Repository for  performing crud.
 		private List<User> users = new List<User>();
 		private int _nextId = 1;
 
 		public UserRepository()
 		{
-			Add(new User { Id = 1, Name = "Tom", ForeName = "Groceries", SurName = "Heer", Created = DateTime.Now });
-			Add(new User { Id = 2, Name = "Tom1", ForeName = "Groceries", SurName = "Heer", Created = DateTime.Now });
-			Add(new User { Id = 3, Name = "Tom2", ForeName = "Groceries", SurName = "Heer", Created = DateTime.Now });
+			Add(new User { Id = 1, Name = "Tom", ForeName = "Tom", SurName = "Heer", Created = DateTime.Now });
+			Add(new User { Id = 2, Name = "Suji", ForeName = "Suji", SurName = "Khan", Created = DateTime.Now });
+			Add(new User { Id = 3, Name = "James", ForeName = "James", SurName = "Bani", Created = DateTime.Now });
 		}
 
 		public IEnumerable<User> GetAll()

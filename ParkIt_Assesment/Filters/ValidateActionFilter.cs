@@ -10,6 +10,7 @@ using Newtonsoft.Json.Linq;
 
 namespace ParkIt_Assesment.Filters
 {
+	//perform validation on the user input.
 	public class ValidateActionFilter : ActionFilterAttribute
 	{
 		public override void OnActionExecuting(HttpActionContext actionContext)
