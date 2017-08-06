@@ -15,6 +15,7 @@ namespace ParkIt_Assesment
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+			//Register the validation filter
 			config.Filters.Add(new ValidateActionFilter());
 
 			config.Routes.MapHttpRoute(
